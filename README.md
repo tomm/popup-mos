@@ -14,6 +14,10 @@ mos/ez80asm.bin - 0.101
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
+mos/hexdump.bin
+Interactive file hexdumper
+https://github.com/sijnstra/agon-projects
+
 mos/more.bin
 Text file viewer
 https://github.com/lennart-benschop/agon-utilities/
@@ -21,6 +25,10 @@ https://github.com/lennart-benschop/agon-utilities/
 mos/nano.bin
 Text editor
 https://github.com/lennart-benschop/agon-utilities/
+
+mos/strings.bin
+A minimal implementation of the *nix strings utility
+https://github.com/sijnstra/agon-projects
 
 util/agon-bench.bin
 Benchmarking tool
