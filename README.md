@@ -6,11 +6,19 @@ Compatible with Quark VDP/MOS 1.04rc2
 
 ## Contents
 
-bbcbasic.bin - 1.06
+bbcbasic.bin v1.06
 Agon BBC BASIC (with negative INKEY() support for MOS 1.04)
 https://github.com/breakintoprogram/agon-bbc-basic/
 
-mos/ez80asm.bin - 0.101
+games/sokoban.bin v1.3
+A custom port of the Sokoban game for the Agon platform
+https://github.com/envenomator/agon-sokoban
+
+games/rokky.bin
+Dungeons and Diamonds game for Agon Light
+https://github.com/nihirash/Agon-rokky
+
+mos/ez80asm.bin v0.101
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
@@ -30,6 +38,6 @@ mos/strings.bin
 A minimal implementation of the *nix strings utility
 https://github.com/sijnstra/agon-projects
 
-util/agon-bench.bin
+utils/agon-bench.bin
 Benchmarking tool
 https://github.com/tomm/toms-agon-experiments
