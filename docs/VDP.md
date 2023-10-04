@@ -72,6 +72,7 @@ VDU 23, 0 is reserved for commands sent to the VDP
 - `VDU 23, 0, &87`: RTC control (Requires MOS 1.03 or above)
 - `VDU 23, 0, &88, delay; rate; led`: Keyboard Control (Requires MOS 1.03 or above)
 - `VDU 23, 0, &C0, n`: Turn logical screen scaling on and off, where 1=on and 0=off (Requires MOS 1.03 or above)
+- `VDU 23, 0, &C1, n`: Turn legacy (MOS 1.03) modes on or off, where 1=on and 0=off
 - `VDU 23, 0, &C3`: Swap the double buffers (in double-buffered screen modes)
 - `VDU 23, 0, &FF`: Switch to terminal mode for CP/M (This will disable keyboard entry in BBC BASIC/MOS)
 
