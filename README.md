@@ -21,7 +21,7 @@ games/rokky.bin
 Dungeons and Diamonds game for Agon Light
 https://github.com/nihirash/Agon-rokky
 
-mos/ez80asm.bin v0.101
+mos/ez80asm.bin v0.103
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
