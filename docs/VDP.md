@@ -34,6 +34,7 @@ Example:
 
 The VDU command is a work-in-progress with a handful of mappings implemented.
 
+- `VDU 7`: Emit a beep sound
 - `VDU 8`: Cursor left
 - `VDU 9`: Cursor right
 - `VDU 10`: Cursor down

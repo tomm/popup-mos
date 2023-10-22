@@ -663,13 +663,14 @@ sysvar_scrRows:		EQU	14h	; 1: Screen rows in characters
 sysvar_scrColours:	EQU	15h	; 1: Number of colours displayed
 sysvar_scrpixelIndex:	EQU	16h	; 1: Index of pixel data read from screen
 sysvar_vkeycode:	EQU	17h	; 1: Virtual key code from FabGL
-sysvar_vkeydown		EQU	18h	; 1: Virtual key state from FabGL (0=up, 1=down)
+sysvar_vkeydown:	EQU	18h	; 1: Virtual key state from FabGL (0=up, 1=down)
 sysvar_vkeycount:	EQU	19h	; 1: Incremented every time a key packet is received
 sysvar_rtc:		EQU	1Ah	; 8: Real time clock data
 sysvar_keydelay:	EQU	22h	; 2: Keyboard repeat delay
 sysvar_keyrate:		EQU	24h	; 2: Keyboard repeat rate
 sysvar_keyled:		EQU	26h	; 1: Keyboard LED status
 sysvar_scrMode:		EQU	27h	; 1: Screen mode (from MOS 1.04)
+sysvar_rtcEnable:	EQU	28h	; 1: RTC enable status (from MOS 1.04)
 ```
 Example: Reading a virtual keycode in ADL mode (24-bit):
 ```
