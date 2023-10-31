@@ -13,6 +13,10 @@ https://github.com/breakintoprogram/agon-bbc-basic/
 docs/
 Agon documentation based on https://github.com/breakintoprogram/agon-docs/wiki
 
+games/drugwars v1.1
+An adaption of the DOS version of the game, converted to BBC BASIC (Z80) for the Agon Light
+https://github.com/oldpatientsea/DRUG-WARS-for-the-Agon-Light
+
 games/sokoban.bin v1.3
 A custom port of the Sokoban game for the Agon platform
 https://github.com/envenomator/agon-sokoban
