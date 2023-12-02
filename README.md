@@ -49,6 +49,10 @@ mos/strings.bin
 A minimal implementation of the *nix strings utility
 https://github.com/sijnstra/agon-projects
 
+mos/vi.bin
+A port of Busybox VI
+https://github.com/tomm/toms-agon-experiments/tree/main/vi
+
 utils/agon-bench.bin
 Benchmarking tool
 https://github.com/tomm/toms-agon-experiments
