@@ -7,8 +7,12 @@ Compatible with Quark VDP/MOS 1.04rc2
 ## Contents
 
 bbcbasic.bin v1.06
-Agon BBC BASIC (with negative INKEY() support for MOS 1.04)
+Agon BBC BASIC in Z80 mode (limited to 64KiB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic/
+
+bbcbasic24.bin v1.03
+Agon BBC BASIC in ADL mode (uses the full 512KiB RAM)
+https://github.com/breakintoprogram/agon-bbc-basic-adl/
 
 docs/
 Agon documentation based on https://github.com/breakintoprogram/agon-docs/wiki
@@ -16,6 +20,10 @@ Agon documentation based on https://github.com/breakintoprogram/agon-docs/wiki
 games/drugwars v1.1
 An adaption of the DOS version of the game, converted to BBC BASIC (Z80) for the Agon Light
 https://github.com/oldpatientsea/DRUG-WARS-for-the-Agon-Light
+
+games/invaders.bin v0.0.5-pre
+Space Invaders
+https://github.com/pgregory/agon-light-invaders
 
 games/sokoban.bin v1.3
 A custom port of the Sokoban game for the Agon platform
