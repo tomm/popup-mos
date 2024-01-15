@@ -21,9 +21,13 @@ games/drugwars v1.1
 An adaption of the DOS version of the game, converted to BBC BASIC (Z80) for the Agon Light
 https://github.com/oldpatientsea/DRUG-WARS-for-the-Agon-Light
 
-games/invaders.bin v0.0.5-pre
+games/invaders.bin v0.1
 Space Invaders
 https://github.com/pgregory/agon-light-invaders
+
+games/lander_28.bin
+Lunar Lander
+https://github.com/richardturnnidge/lunar_lander
 
 games/sokoban.bin v1.3
 A custom port of the Sokoban game for the Agon platform
@@ -52,6 +56,10 @@ https://github.com/lennart-benschop/agon-utilities/
 mos/nano.bin
 Text editor
 https://github.com/lennart-benschop/agon-utilities/
+
+mos/playmod.bin alpha3
+Agon .MOD tracker
+https://github.com/HeathenUK/agon_mod
 
 mos/strings.bin
 A minimal implementation of the *nix strings utility
