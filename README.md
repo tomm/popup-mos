@@ -37,7 +37,7 @@ games/rokky.bin
 Dungeons and Diamonds game for Agon Light
 https://github.com/nihirash/Agon-rokky
 
-mos/ez80asm.bin v1.0
+mos/ez80asm.bin v1.2
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
@@ -57,7 +57,7 @@ mos/nano.bin
 Text editor
 https://github.com/lennart-benschop/agon-utilities/
 
-mos/playmod.bin alpha3
+mos/playmod.bin release11
 Agon .MOD tracker
 https://github.com/HeathenUK/agon_mod
 
