@@ -11,11 +11,11 @@ There are four RST instructions for accessing MOS functionality from Z80.
 - `RST 10h`: Output a single character to the VDP
 - `RST 18h`: Output a stream of characters to the VDP (MOS 1.03 or above)
 
-In addition, you will probably want to include the file `mos_api.inc` in your project. This can be found in the folder [src](https://github.com/breakintoprogram/agon-mos/tree/main/src) of project [agon-mos](https://github.com/breakintoprogram/agon-mos).
+In addition, you will probably want to include the file `mos_api.inc` in your project.  The Console8 version can be found in the folder [src](https://github.com/AgonConsole8/agon-mos/tree/main/src) of project [agon-mos](https://github.com/AgonConsole8/agon-mos).  The original Quark versions of this file can be found in the folder [src](https://github.com/breakintoprogram/agon-mos/tree/main/src) of project [agon-mos](https://github.com/breakintoprogram/agon-mos).
 
 NB:
 
-- Include the file mos_api.inc in your project
+- Include the file `mos_api.inc` in your project
 - The `RST.LIS` ensures the MOS RST instructions are called regardless of the eZ80s current addressing mode
 
 ### RST 08h: Execute a MOS command
@@ -70,13 +70,19 @@ OSWRCH:		RST.LIS	10h			; This calls a RST in the eZ80 address space
 		RET
 ```
 
-### RST 18h: Output a stream of characters to the VPD (MOS 1.03 or above)
+### RST 18h: Output a stream of characters to the VDP (MOS 1.03 or above)
 
 Parameters:
 
 - HL: Address of the data stream (16-bit for Z80 mode, 24-bit for ADL mode)
-- BC: Length of stream (or 0 if the stream is limited)
+- BC: Length of stream (or 0 if the stream is delimited)
 - A: Stream delimiter (if BC=0)
+
+Returns:
+- A: Last character displayed (length mode) OR Delimeter (delimeter mode)
+- BC: 0
+- HL(U): Address of last character displayed + 1 (length mode) OR location of delimeter (delimeter mode)
+- E: Value of A upon entry
 
 Example:
 
@@ -478,6 +484,84 @@ Returns:
 
 - A: FRESULT
 
+### 0x1D: mos_setkbvector
+
+Allows user programs to access VDP keyboard packets without overriding the entire uart0 interrupt handler.
+The user program registered, will be called during the uart0 interrupt handler, being passed the address of the full VDP keyboard packet. Normal MOS key handling is disabled when a user program is registered.
+
+Parameters:
+
+- C: Address length in HL (0 = 24bit, 1 = 16bit). If 1 then set the top byte of HLU(callback address) to MB (for ADL=0 callers)
+- HL(U): Callback address of user program to register, or 0 to clear any previously registered vector
+
+Returns: Nothing upon registration. The user program can expect the full VDP packet address in DE(24-bit) upon entry.
+
+[example code](https://github.com/tomm/agon-mos/blob/main/bin/kbvector.asm) that registers a custom handler.
+
+### 0x1E: mos_getkbmap
+
+Fetch a pointer to the virtual keyboard map (Requires MOS 1.04 RC2 or above)
+
+Parameters: None
+
+Returns:
+
+- IXU: Pointer to the keyboard bitmap (this is always 24 bit)
+
+### 0x1F: mos_i2c_open
+
+Open the I2C bus as Master (Requires MOS 1.04 RC3 or above)
+
+Parameters:
+
+- C: Frequency ID (1: 57600, 2: 115200, 3: 230400)
+
+Returns: None
+
+### 0x20: mos_i2c_close
+
+Close the I2C bus (Requires MOS 1.04 RC3 or above)
+
+Parameters: None
+
+Returns: None
+
+### 0x21: mos_i2c_write
+
+Write a block of bytes to the I2C bus (Requires MOS 1.04 RC3 or above)
+
+Parameters:
+
+- C: I2C Address
+- B: Number of bytes to write (maximum 32)
+- HL(U): Pointer to a buffer to read the bytes from
+
+Returns:
+- A: Status
+	- 0: OK
+	- 1: No response from I2C slave
+	- 2: Data NACK
+	- 4: Bus arbitration lost
+	- 8: Bus error
+
+### 0x22: mos_i2c_read
+
+Read a block of bytes from the I2C bus (Requires MOS 1.04 RC3 or above)
+
+Parameters:
+
+- C: I2C Address
+- B: Number of bytes to read (maximum 32)
+- HL(U): Pointer to a buffer to write the bytes to
+
+Returns:
+- A: Status
+	- 0: OK
+	- 1: No response from I2C slave
+	- 2: Data NACK
+	- 4: Bus arbitration lost
+	- 8: Bus error
+
 ***
 
 ## FatFS commands
@@ -663,14 +747,20 @@ sysvar_scrRows:		EQU	14h	; 1: Screen rows in characters
 sysvar_scrColours:	EQU	15h	; 1: Number of colours displayed
 sysvar_scrpixelIndex:	EQU	16h	; 1: Index of pixel data read from screen
 sysvar_vkeycode:	EQU	17h	; 1: Virtual key code from FabGL
-sysvar_vkeydown:	EQU	18h	; 1: Virtual key state from FabGL (0=up, 1=down)
+sysvar_vkeydown		EQU	18h	; 1: Virtual key state from FabGL (0=up, 1=down)
 sysvar_vkeycount:	EQU	19h	; 1: Incremented every time a key packet is received
 sysvar_rtc:		EQU	1Ah	; 8: Real time clock data
 sysvar_keydelay:	EQU	22h	; 2: Keyboard repeat delay
 sysvar_keyrate:		EQU	24h	; 2: Keyboard repeat rate
 sysvar_keyled:		EQU	26h	; 1: Keyboard LED status
 sysvar_scrMode:		EQU	27h	; 1: Screen mode (from MOS 1.04)
-sysvar_rtcEnable:	EQU	28h	; 1: RTC enable status (from MOS 1.04)
+sysvar_rtc_enable:	EQU 28h ; 1: RTC enable status (from Console8 MOS 2.0.0)
+sysvar_mouseX:		EQU 29h ; 2: Mouse X position
+sysvar_mouseY:		EQU 2Bh ; 2: Mouse Y position
+sysvar_mouseButtons:	EQU 2Dh ; 1: Mouse left+right+middle buttons (bits 0-2, 0=up, 1=down)
+sysvar_mouseWheel:		EQU 2Eh ; 1: Mouse wheel delta
+sysvar_mouseXDelta:		EQU 2Fh ; 2: Mouse X delta
+sysvar_mouseYDelta:		EQU 31h ; 2: Mouse Y delta
 ```
 Example: Reading a virtual keycode in ADL mode (24-bit):
 ```

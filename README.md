@@ -2,15 +2,15 @@
 
 ## A batteries-included SDCard template for Agon Light / Console8
 
-Compatible with Quark VDP/MOS 1.04rc2
+Compatible with Console8 MOS 2.2+
 
 ## Contents
 
-bbcbasic.bin v1.06
+bin/bbcbasic.bin v1.06
 Agon BBC BASIC in Z80 mode (limited to 64KiB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic/
 
-bbcbasic24.bin v1.03
+bin/bbcbasic24.bin v1.03
 Agon BBC BASIC in ADL mode (uses the full 512KiB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic-adl/
 
@@ -37,11 +37,11 @@ games/rokky.bin
 Dungeons and Diamonds game for Agon Light
 https://github.com/nihirash/Agon-rokky
 
-mos/ez80asm.bin v1.2
+mos/ez80asm.bin v1.4
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
-mos/flash.bin
+mos/flash.bin v1.7
 Agon MOS firmware upgrade utility
 https://github.com/envenomator/agon-flash
 
