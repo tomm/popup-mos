@@ -14,6 +14,10 @@ bin/bbcbasic24.bin v1.03
 Agon BBC BASIC in ADL mode (uses the full 512KiB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic-adl/
 
+bin/vi.bin v1.02
+A port of Busybox VI
+https://github.com/tomm/toms-agon-experiments/tree/main/vi
+
 docs/
 Agon documentation based on https://github.com/breakintoprogram/agon-docs/wiki
 
@@ -64,10 +68,6 @@ https://github.com/HeathenUK/agon_mod
 mos/strings.bin
 A minimal implementation of the *nix strings utility
 https://github.com/sijnstra/agon-projects
-
-mos/vi.bin v1.01
-A port of Busybox VI
-https://github.com/tomm/toms-agon-experiments/tree/main/vi
 
 utils/agon-bench.bin
 Benchmarking tool
