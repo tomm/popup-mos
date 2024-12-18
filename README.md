@@ -14,6 +14,10 @@ bin/bbcbasic24.bin v1.03
 Agon BBC BASIC in ADL mode (uses the full 512KiB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic-adl/
 
+bin/ez80asm.bin v1.11
+EZ80 Assembler for Agon
+https://github.com/envenomator/agon-ez80asm
+
 bin/vi.bin v1.02
 A port of Busybox VI
 https://github.com/tomm/toms-agon-experiments/tree/main/vi
@@ -40,10 +44,6 @@ https://github.com/envenomator/agon-sokoban
 games/rokky.bin
 Dungeons and Diamonds game for Agon Light
 https://github.com/nihirash/Agon-rokky
-
-mos/ez80asm.bin v1.4
-EZ80 Assembler for Agon
-https://github.com/envenomator/agon-ez80asm
 
 mos/flash.bin v1.7
 Agon MOS firmware upgrade utility
