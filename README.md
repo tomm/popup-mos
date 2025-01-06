@@ -18,7 +18,7 @@ bin/ez80asm.bin v1.11
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
-bin/vi.bin v1.02
+bin/vi.bin v1.03
 A port of Busybox VI
 https://github.com/tomm/toms-agon-experiments/tree/main/vi
 
