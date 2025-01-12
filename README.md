@@ -14,7 +14,7 @@ bin/bbcbasic24.bin v1.03
 Agon BBC BASIC in ADL mode (uses the full 512KiB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic-adl/
 
-bin/ez80asm.bin v1.11
+bin/ez80asm.bin v2.0
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
