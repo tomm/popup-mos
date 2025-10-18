@@ -4,6 +4,11 @@
 
 Compatible with Console8 MOS 2.2+
 
+## Updates
+
+The most recent version of this software collection can be found at
+https://github.com/tomm/popup-mos
+
 ## Contents
 
 bin/bbcbasic.bin v1.06
@@ -18,7 +23,7 @@ bin/ez80asm.bin v2.0
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
-bin/vi.bin v1.04
+bin/vi.bin v1.05
 A port of Busybox VI
 https://github.com/tomm/toms-agon-experiments/tree/main/vi
 
