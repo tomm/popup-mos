@@ -23,6 +23,14 @@ bin/ez80asm.bin v2.1
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
+bin/gunzip.bin v0.3
+Decompressor for GNU-zipped archive files
+https://github.com/sijnstra/agon-projects/tree/main/gunzip
+
+bin/unzip.bin v0.4
+Decompressor for PKZip/Windows Zip files (including subdirectories)
+https://github.com/sijnstra/agon-projects/tree/main/unzip
+
 bin/vi.bin v1.05
 A port of Busybox VI
 https://github.com/tomm/toms-agon-experiments/tree/main/vi
@@ -49,6 +57,13 @@ https://github.com/envenomator/agon-sokoban
 games/rokky.bin
 Dungeons and Diamonds game for Agon Light
 https://github.com/nihirash/Agon-rokky
+
+games/X-O.bin
+Naughts and Crosses written in Pascal. Source coming soon.
+
+mos/calc24.bin
+24bit integer calculator usable from command line or interactive
+https://github.com/sijnstra/agon-projects/tree/main/calc24
 
 mos/flash.bin v1.7
 Agon MOS firmware upgrade utility
