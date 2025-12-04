@@ -35,6 +35,10 @@ bin/vi.bin v1.05
 A port of Busybox VI
 https://github.com/tomm/toms-agon-experiments/tree/main/vi
 
+bin/crc32.bin v1.0
+Creates a CRC32 checksum of a given file
+https://github.com/envenomator/agon-crc32
+
 docs/
 Agon documentation based on https://github.com/breakintoprogram/agon-docs/wiki
 
