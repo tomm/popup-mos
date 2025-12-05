@@ -11,7 +11,6 @@ https://github.com/tomm/popup-mos
 
 ## Contents
 ### files in bin/
-
 bin/bbcbasic.bin v1.06
 Agon BBC BASIC in Z80 mode (limited to 64KiB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic/
@@ -88,6 +87,10 @@ games/X-O.bin
 Naughts and Crosses written in Pascal. Source coming soon.
 
 ### files in mos/
+mos/bootlogo.bin
+Bootlogo showing current screen settings and palette; recommended to add to autoexec.txt
+https://github.com/sijnstra/agon-projects/tree/main/bootlogo
+
 mos/cal.bin
 Calendar utility
 https://github.com/lennart-benschop/agon-utilities
