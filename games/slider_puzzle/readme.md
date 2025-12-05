@@ -9,3 +9,6 @@ Use keys to slide the puzzle pieces back into the correct positions.
 
 Choose a different picture from up to 10 placed in 'puzzles' folder.
 Images need to be 320x240 RGBA2222 format. ie, 76,800 bytes in size.
+
+Copy `slider.bin` and `puzzles` folder contents to your SD card. Run `slider`.
+
