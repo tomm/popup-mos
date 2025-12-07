@@ -59,6 +59,14 @@ Example free bitmap font by EPTO to demonstrate loadfont, downloaded from:
 https://github.com/epto/epto-fonts/tree/master
 
 ### files in games/
+games/akalabeth.bas
+Akalabeth: World of Doom, often referred to as Ultima 0 (the first Ultima style game), ported to Agon's BBC Basic. More at:
+https://github.com/sijnstra/Akalabeth
+
+games/chuckie.bin
+Agon rewrite of Chuckie Egg, including sound and joystick. Source code from the author at:
+https://github.com/xianpinder/AgonChuckieEgg
+
 games/drugwars v1.1
 An adaption of the DOS version of the game, converted to BBC BASIC (Z80) for the Agon Light
 https://github.com/oldpatientsea/DRUG-WARS-for-the-Agon-Light
