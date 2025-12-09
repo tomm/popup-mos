@@ -39,7 +39,7 @@ bin/unzip.bin v0.4
 Decompressor for PKZip/Windows Zip files (including subdirectories)
 https://github.com/sijnstra/agon-projects/tree/main/unzip
 
-bin/vi.bin v1.05
+bin/vi.bin v1.06
 A port of Busybox VI
 https://github.com/tomm/toms-agon-experiments/tree/main/vi
 
