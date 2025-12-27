@@ -119,7 +119,7 @@ mos/find.bin
 Utility to find files in any directory
 https://github.com/lennart-benschop/agon-utilities
 
-mos/flash.bin v1.7
+mos/flash.bin v1.9
 Agon MOS firmware upgrade utility
 https://github.com/envenomator/agon-flash
 
