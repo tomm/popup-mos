@@ -47,6 +47,10 @@ bin/sort.bin
 Sorts lines in a text file in ASCII-lexigographic order.
 https://github.com/lennart-benschop/agon-utilities
 
+bin/video_driver.bin
+GPIO video driver for Framebuffer MOS
+https://github.com/tomm/vga-ez80
+
 ### files in demos/
 Various demo files to showcase features of the Agon Light/Console8
 
