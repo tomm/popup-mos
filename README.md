@@ -47,7 +47,7 @@ bin/sort.bin
 Sorts lines in a text file in ASCII-lexigographic order.
 https://github.com/lennart-benschop/agon-utilities
 
-bin/video_driver.bin
+bin/gpiovideodriver.bin
 GPIO video driver for Framebuffer MOS
 https://github.com/tomm/vga-ez80
 
