@@ -87,6 +87,10 @@ games/lander_28.bin
 Lunar Lander
 https://github.com/richardturnnidge/lunar_lander
 
+games/starship_sentinel.bin
+Starship Sentinel - shoot 'em up style game. Destroy all the invaders before running out of fuel or air.
+https://github.com/richardturnnidge/starship_sentinel
+
 games/sokoban.bin v1.3
 A custom port of the Sokoban game for the Agon platform
 https://github.com/envenomator/agon-sokoban
