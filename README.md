@@ -143,6 +143,10 @@ mos/hexdump.bin
 Interactive file hexdumper
 https://github.com/sijnstra/agon-projects
 
+mos/matrix.bin
+Interactive screen saver/demo
+https://github.com/sijnstra/agondev-projects
+
 mos/memfill.bin
 Fill a memory space with a particular value to assist with debugging
 https://github.com/lennart-benschop/agon-utilities
