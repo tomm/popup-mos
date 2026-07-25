@@ -11,12 +11,16 @@ https://github.com/tomm/popup-mos
 
 ## Contents
 ### files in bin/
+bin/basic.bin v1.0RC1
+Agon BBC BASIC v5.0 in eZ80/ADL mode (used the full 512KB RAM)
+https://github.com/envenomator/agon-bbc-basic
+
 bin/bbcbasic.bin v1.06
-Agon BBC BASIC in Z80 mode (limited to 64KiB RAM)
+Agon BBC BASIC v3.0 in Z80 mode (limited to 64KB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic/
 
 bin/bbcbasic24.bin v1.03
-Agon BBC BASIC in ADL mode (uses the full 512KiB RAM)
+Agon BBC BASIC v3.0 in eZ80/ADL mode (uses the full 512KB RAM)
 https://github.com/breakintoprogram/agon-bbc-basic-adl/
 
 bin/crc32.bin v1.0
