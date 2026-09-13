@@ -27,7 +27,7 @@ bin/crc32.bin v1.0
 Creates a CRC32 checksum of a given file
 https://github.com/envenomator/agon-crc32
 
-bin/ez80asm.bin v2.1
+bin/ez80asm.bin v2.3
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
