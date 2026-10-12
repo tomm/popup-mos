@@ -11,6 +11,11 @@ https://github.com/tomm/popup-mos
 
 ## Contents
 ### files in bin/
+bin/acc.bin v0.4.0
+C compiler that runs on the Agon and builds MOS programs (and moslets) from C99 source.
+Its C library, runtime and headers are in lib/acc/, where acc expects them.
+https://github.com/avalonbits/acc
+
 bin/basic.bin v1.0RC1
 Agon BBC BASIC v5.0 in eZ80/ADL mode (used the full 512KB RAM)
 https://github.com/envenomator/agon-bbc-basic
@@ -105,6 +110,11 @@ https://github.com/nihirash/Agon-rokky
 
 games/X-O.bin
 Naughts and Crosses written in Pascal. Source coming soon.
+
+### files in lib/
+lib/acc/
+The C library (libc.a), runtime (rt.a) and headers (include/) used by bin/acc.bin.
+https://github.com/avalonbits/acc
 
 ### files in mos/
 mos/bootlogo.bin
