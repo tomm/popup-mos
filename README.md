@@ -36,6 +36,10 @@ bin/ez80asm.bin v2.3
 EZ80 Assembler for Agon
 https://github.com/envenomator/agon-ez80asm
 
+bin/zap.bin v1.1.0
+Fast single-pass eZ80 assembler; a drop-in replacement for ez80asm (same command line, syntax and output bytes)
+https://github.com/avalonbits/zap
+
 bin/gunzip.bin v0.3
 Decompressor for GNU-zipped archive files
 https://github.com/sijnstra/agon-projects/tree/main/gunzip
