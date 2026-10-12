@@ -11,6 +11,11 @@ https://github.com/tomm/popup-mos
 
 ## Contents
 ### files in bin/
+bin/aed.bin v1.6.3
+Text editor with selection, copy/paste between files, undo/redo, find and syntax highlighting.
+Its fonts, syntax and theme files are in config/aed/. Requires MOS 2.3.3 or later.
+https://github.com/avalonbits/aed
+
 bin/acc.bin v0.4.0
 C compiler that runs on the Agon and builds MOS programs (and moslets) from C99 source.
 Its C library, runtime and headers are in lib/acc/, where acc expects them.
@@ -63,6 +68,11 @@ https://github.com/lennart-benschop/agon-utilities
 bin/gpiovideodriver.bin
 GPIO video driver for Framebuffer MOS
 https://github.com/tomm/vga-ez80
+
+### files in config/
+config/aed/
+Fonts, syntax highlighting grammars and colour themes used by bin/aed.bin. aed writes its settings to config/aed.ini on first run.
+https://github.com/avalonbits/aed
 
 ### files in demos/
 Various demo files to showcase features of the Agon Light/Console8
